@@ -16,4 +16,6 @@ class Room extends Model
         $formatedArea=number_format($this->area,0,',','.');
         return $formatedArea." m2";
      }
-}
+     
+
+    }

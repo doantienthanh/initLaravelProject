@@ -6,21 +6,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Room;
+use App\Http\Requests\RolesAdd;
 use Illuminate\Support\Facades\Validator;
 class ProductController extends Controller
 {
     function index(){
         return view('room.addRoom');
     }
-
-    function addProduct(REQUEST $request){
-        $validatedData = $request->validate([
-            'name' => ['required'],
-            'number'=> ['min:1'],
-            'price'=> ['min:100000'],
-            'area'=> ['min:50'],
-        ]);
-
+    function addProduct(RolesAdd $request){
            $name=$request->name;
            $type=$request->typeroom;
            $number=$request->number;
@@ -37,5 +30,4 @@ class ProductController extends Controller
            $room->save();
            return redirect('/home');
        }
-    
 }
