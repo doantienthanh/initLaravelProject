@@ -15,7 +15,7 @@ class RoomSeeder extends Seeder
                 [
                     'name'=>$faker->name,
                     'typeroom'=>$faker->title,
-                    'image'=>Str::random(10),
+                    'image'=>"public/o8ZQqbhyejuFSjlrl3VWSnxjxvBYigASpApOjIBl.jpeg",
                     'number'=>$faker->numberBetween($min=1,$max=20),
                     'area'=>$faker->numberBetween($min=100,$max=150),
                     'price'=>$faker->numberBetween($min=200000,$max=300000)

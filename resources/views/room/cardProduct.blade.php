@@ -9,7 +9,6 @@
             <div class="card-body">
                 <h4 class="card-title" style="text-align:center;">{{$room->name}}</h4> <br>
                 <hr>
-
                 <p class="card-text" style="color:black;">Loại phòng:&emsp;<span style="float:right;">
                         {{$room->typeroom}}</b></span>
                     <hr>
