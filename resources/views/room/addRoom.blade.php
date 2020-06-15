@@ -35,17 +35,29 @@
         <form action="/home/addProduct" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                @error($validatedData)
+                @error('name')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <label for="name">Tên sản phẩm</label>
                 <input id="name" class="form-control" type="text" name="name"> <br>
-                <label for="type">Loại sản phẩm</label>
-                <input id="type" class="form-control" type="text" name="type"><br>
+                @error('type')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+                <label for="typeroom">Loại Phong</label>
+                <input id="typeroom" class="form-control" type="text" name="typeroom"><br>
+                @error('number')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <label for="number">Số phòng</label>
                 <input id="number" class="form-control" type="number" name="number"><br>
+                @error('area')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <label for="area">Diện tích</label>
                 <input id="area" class="form-control" type="number" name="area"><br>
+                @error('price')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
                 <label for="price">Giá</label>
                 <input id="price" class="form-control" type="number" name="price"><br>
                 <label for="image">Chọn ảnh</label>

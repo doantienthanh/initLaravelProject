@@ -11,19 +11,22 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="/home">
+    <img src="https://st2.depositphotos.com/5486388/8161/v/950/depositphotos_81616862-stock-illustration-hotel-logo-template.jpg" alt="logo" style="width:40px;">
+  </a>
+  
+  <!-- Links -->
   <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="/home">Trang chủ</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/home/formAddProduct">Thêm sản phẩm</a>
+      <a class="nav-link" href="#">Link 2</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
+      <a class="nav-link" href="#">Link 3</a>
     </li>
   </ul>
 </nav>

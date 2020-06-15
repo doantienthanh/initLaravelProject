@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 Route::get('/home/formAddProduct','Admin\ProductController@index');
 Route::get('/home','HomeController@getHome');
+Route::post('/home/addProduct','Admin\ProductController@addProduct');
