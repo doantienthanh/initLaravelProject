@@ -39,10 +39,7 @@
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <label for="name">Tên sản phẩm</label>
-                <input id="name" class="form-control" type="text" name="name"> <br>
-                @error('type')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
+                <input id="name" class="form-control" type="text" name="name"> <br>           
                 <label for="typeroom">Loại Phong</label>
                 <input id="typeroom" class="form-control" type="text" name="typeroom"><br>
                 @error('number')

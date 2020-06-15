@@ -37,6 +37,9 @@
     <li class="nav-item" style="margin-left:30px;">
       <a class="nav-link" href="#"><i class='fas fa-user-alt' style='font-size:24px'>Liên hệ</i></a>
     </li>
+    <li class="nav-item" style="margin-left:30px;">
+      <a class="nav-link" href="/home/formAddProduct">Thêm sản phẩm</a>
+    </li>
   </ul>
 </nav>
 <div class="container" style="margin-top:50px;">
@@ -53,10 +56,10 @@
                 <h4 class="card-title" style="text-align:center;">{{$room->name}}</h4> <br>
                 <p class="card-text" style="color:black;">Loại phòng:&emsp;<span style="float:right;"> {{$room->typeroom}}</b></span>
                 <p class="card-text" style="color:black;">Diện tích:&emsp; <span style="float:right;">{{$room->getArea()}}</span></p>
-                <p class="card-text" style="color:black;">Giá phòng:&emsp;<span style="float:right;">  {{$room->getPrice()}}</span></p>
+                <p class="card-text" style="color:black;">Giá phòng:&emsp;<span style="float:right;">  <b>{{$room->getPrice()}}</b></span></p>
             </div>
             <div class="card-footer">
-            <p class="card-text" style="color:black;">Xem:&emsp;<span style="float:right;">  Đặt phòng</span></p>     
+            <p class="card-text" style="color:black;">Xem:&emsp;<span style="float:right;color:#FF6633;"> <b> Đặt phòng</b></span></p>     
             </div>
         </div>
     </div>

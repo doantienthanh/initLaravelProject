@@ -14,6 +14,13 @@ class ProductController extends Controller
     }
 
     function addProduct(REQUEST $request){
+        $validatedData = $request->validate([
+            'name' => ['required'],
+            'number'=> ['min:1'],
+            'price'=> ['min:100000'],
+            'area'=> ['min:50'],
+        ]);
+
            $name=$request->name;
            $type=$request->typeroom;
            $number=$request->number;
